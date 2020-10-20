@@ -59,7 +59,18 @@
 
             <div class="float-right">
 
-            <a href="#" class="text-white"><span class="mr-2 text-white icon-calendar"></span> <span class="d-none d-md-inline-block">06 September 2020, Sunday</span></a>
+            <a href="#" class="text-white"><span class="mr-2 text-white icon-calendar"></span> 
+            <span class="d-none d-md-inline-block">
+				<script type="text/javascript">
+                    var date_format = new Date();
+                    const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+                    const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
+                    const d = new Date();
+                    const g = new Date();
+                    
+                    document.write(innerHTML = date_format.getDate()+' '+ monthNames[d.getMonth()]+' '+date_format.getFullYear()+', '+ dayNames[g.getDay()-1]);
+                </script>
+			</span></a>
             </div>
 
           </div>
@@ -214,18 +225,19 @@ Aromatherapy is a form of herbal medicine, in which healing effects are ascribed
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-8">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <h2 class="footer-heading mb-4">Working Hours</h2>
+                <p>Monday-Friday : 09:00 - 18:00<br/>
+                   Weekend  :  Closed</p>
               </div>
               <div class="col-md-4 ml-auto">
                 <h2 class="footer-heading mb-4">Features</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#about-section">About Us</a></li>
-                  <li><a href="#news-section">News</a></li>
-                  <li><a href="#brand-section">Our Brands</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#contact-section">Contact Us</a></li>
+                  <li><a href="index.html#about-section">About Us</a></li>
+                  <li><a href="index.html#news-section">News</a></li>
+                  <li><a href="index.html#brand-section">Our Brands</a></li>
+                  <li><a href="index.html#products-section">Products</a></li>
+                  <li><a href="essential-oil.html">Essential Oil</a></li>
+                  <li><a href="index.html#contact-section">Contact Us</a></li>
                 </ul>
               </div>
               
